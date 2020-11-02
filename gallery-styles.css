@@ -38,53 +38,49 @@
 
 
 
+
+
+
+
+
+
+
+
+  @media screen and (max-width: 992px) {
+    .container {
+      flex: 50%;
+    }
+  }
+  
+  
+  @media screen and (max-width: 600px) {
+    .column {
+      flex-direction: column;
+    }	
+  }
+
+
+
 body {background: rgba(0, 0, 0, 0.5);}
 
+
 .row {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .column {
-    flex-wrap: wrap;
-    flex: 25%
-}
+  display:flex;
 
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
-}
 
-.column img {
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
-}
-
-@media screen and (max-width: 800px) {
-    .column {
-      flex: 50%;
-      max-width: 50%;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .column {
-      flex: 100%;
-      max-width: 100%;
-    }
-}
-
-.main.wrapper {
-    position: relative;
-    height: 200px;
-    width: auto;
 }
 
 .container {
+    display: block;
     position: relative;
-    width: 98%;
+    width:100%;
+    margin: 10px;
     
   }
   
@@ -129,13 +125,6 @@ body {background: rgba(0, 0, 0, 0.5);}
     text-align: center;
   }
 
-img {
-    position: relative;
-    left: 0px;
-    top: 0px;
-    z-index: -1;
-  }
-
   img:hover {
     -webkit-animation-duration: calc(1s * 0.75);
   animation-duration: calc(1s * 0.75);
@@ -144,7 +133,7 @@ img {
   -webkit-animation-name: bounceIn;
   animation-name: bounceIn;
   }
-
+  
   @keyframes bounceIn {
     from,
     20%,
